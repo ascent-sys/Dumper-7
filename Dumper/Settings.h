@@ -31,7 +31,7 @@ namespace Settings
 		constexpr bool bCheckEnumNamesInUEnum = true;
 
 		/* Enables support for TEncryptedObjectProperty */
-		constexpr bool bEnableEncryptedObjectPropertySupport = false;
+		constexpr bool bEnableEncryptedObjectPropertySupport = true;
 	}
 
 	namespace Generator
@@ -73,7 +73,7 @@ R"(
 	}
 )";
 		/* An option to force the UWorld::GetWorld() function in the SDK to get the world through an instance of UEngine. Useful for games on which the dumper finds the wrong GWorld offset. */
-		constexpr bool bForceNoGWorldInSDK = false;
+		constexpr bool bForceNoGWorldInSDK = true;
 
 		/* This will allow the user to manually initialize global variable addresses in the SDK (eg. GObjects, GNames, AppendString). */
 		constexpr bool bAddManualOverrideOptions = true;
