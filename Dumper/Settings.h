@@ -15,7 +15,7 @@ namespace Settings
 #endif
 	}
   
-	inline constexpr const char* GlobalConfigPath = "D:/Dumper-7/Dumper-7.ini";
+	inline constexpr const char* GlobalConfigPath = "C:/Dumper-7/Dumper-7.ini";
 
 	namespace Config
 	{
@@ -40,7 +40,7 @@ namespace Settings
 		inline std::string GameName = "";
 		inline std::string GameVersion = "";
 
-		inline constexpr const char* SDKGenerationPath = "D:/Dumper-7";
+		inline constexpr const char* SDKGenerationPath = "C:/Dumper-7";
 	}
 
 	namespace CppGenerator
@@ -98,7 +98,7 @@ R"(
 	namespace Debug
 	{
 		/* Generates a dedicated file defining macros for static asserts (Make sure InlineAssertions are off) */
-		inline constexpr bool bGenerateAssertionFile = false;
+		inline constexpr bool bGenerateAssertionFile = true;
 
 		/* Prefix for assertion macros in assertion file. Example for "MyPackage_params.hpp": #define DUMPER7_ASSERTS_PARAMS_MyPackage */
 		inline constexpr const char* AssertionMacroPrefix = "DUMPER7_ASSERTS_";
@@ -112,7 +112,7 @@ R"(
 
 
 		/* Prints debug information during Mapping-Generation */
-		inline constexpr bool bShouldPrintMappingDebugData = false;
+		inline constexpr bool bShouldPrintMappingDebugData = true;
 	}
 
 	//* * * * * * * * * * * * * * * * * * * * *// 
